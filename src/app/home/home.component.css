@@ -1,0 +1,43 @@
+.small-cards-container {
+  max-width: 1200px; /* Define uma largura máxima para o contêiner */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+  padding: 0 1rem; /* Adiciona padding lateral para telas pequenas */
+}
+
+.small-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza os cartões horizontalmente */
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.small-cards app-small-card {
+  flex: 1 1 calc(33.33% - 1rem); /* 3 por linha */
+  max-width: calc(33.33% - 1rem);
+  min-width: 300px;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.loading::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #666;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-right: 0.5rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

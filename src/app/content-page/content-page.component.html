@@ -1,0 +1,14 @@
+<div class="content-page">
+    <h1>{{ post?.title }}</h1>
+    <img [src]="post?.imageUrl" alt="Post Image" class="post-image">
+    <p class="description">{{ post?.description }}</p>
+    <div class="post-content">
+      <div *ngFor="let section of post?.sections" class="section">
+        <h2 *ngIf="section.title">{{ section.title }}</h2>
+        <p *ngIf="section.text">{{ section.text }}</p>
+        <ul *ngIf="section.items">
+          <li *ngFor="let item of section.items">{{ item }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>

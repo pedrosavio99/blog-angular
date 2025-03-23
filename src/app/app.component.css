@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o contêiner ocupe 100% da altura da viewport */
+}
+
+main {
+  flex: 1 0 auto; /* Faz o conteúdo principal crescer para ocupar o espaço disponível */
+}
+
+app-footer {
+  flex-shrink: 0; /* Impede que o rodapé encolha */
+}

@@ -1,0 +1,24 @@
+<div *ngIf="isLoading" class="loading">
+  <p>Carregando posts...</p>
+</div>
+<div *ngIf="!isLoading">
+  <div *ngIf="featuredPost">
+    <app-big-card
+      [title]="featuredPost!.title"
+      [description]="featuredPost!.description"
+      [id]="featuredPost!.id"
+      [imageUrl]="featuredPost!.imageUrl">
+    </app-big-card>
+  </div>
+  <div class="small-cards-container">
+    <div class="small-cards">
+      <app-small-card
+        *ngFor="let post of posts"
+        [title]="post.title"
+        [description]="post.description"
+        [id]="post.id"
+        [imageUrl]="post.imageUrl">
+      </app-small-card>
+    </div>
+  </div>
+</div>
