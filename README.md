@@ -1,59 +1,63 @@
-# Myapp
+# Blog Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+Este é um projeto de blog desenvolvido em Angular para exibir posts de tecnologia. O blog tem um "Post Destaque" em um Big Card e outros posts em Small Cards (3 por linha, centralizados).
 
-## Development server
+## Tecnologias Utilizadas
+- Angular 17
+- TypeScript
+- HTML
+- CSS
+- Git
 
-To start a local development server, run:
+## Funcionalidades
+- "Post Destaque" em um Big Card na página inicial.
+- 12 posts em Small Cards, 3 por linha, centralizados.
+- Imagens fictícias (Unsplash) relacionadas aos temas dos posts.
+- Navegação para página de conteúdo ao clicar em "Leia mais".
+- Estado de carregamento com mensagem "Carregando posts...".
+- Layout responsivo (2 cartões por linha em tablets, 1 por linha em celulares).
 
-```bash
-ng serve
-```
+## Estrutura do Projeto
+- src/app/home: Componente principal (Big Card e Small Cards).
+- src/app/big-card: Componente do Big Card.
+- src/app/small-card: Componente do Small Card.
+- src/app/post.service.ts: Serviço com os dados dos posts.
+- src/app/app.component.css: Estilização global para centralizar o conteúdo.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Como Rodar o Projeto
+1. Clone o repositório
+2. Entre na pasta do projeto:
+   cd blog-angular
+3. Instale as dependências:
+   npm install
+4. Inicie o servidor:
+   ng serve
+5. Acesse no navegador:
+   http://localhost:4200
 
-## Code scaffolding
+## Tópicos dos Posts
+- CI/CD: Automatizando o Desenvolvimento
+- Princípios SOLID no Desenvolvimento
+- Docker Compose: Gerenciando Múltiplos Containers
+- Containers em Aplicações Linux
+- Configurando Servidores Pessoais
+- Comandos Git Essenciais
+- Algoritmos: Fundamentos e Aplicações
+- React: Construindo Interfaces Modernas
+- Reducers: Gerenciando Estado em Aplicações
+- Padrão MVC: Organizando seu Código
+- Spring: Desenvolvendo com Java
+- Daily Scrum: Melhorando a Comunicação
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Contribuindo
+1. Faça um fork do repositório.
+2. Crie uma branch:
+   git checkout -b minha-nova-funcionalidade
+3. Faça suas alterações e commit:
+   git commit -m "Adiciona nova funcionalidade"
+4. Envie para o remoto:
+   git push origin minha-nova-funcionalidade
+5. Crie um Pull Request no GitHub.
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Licença
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
